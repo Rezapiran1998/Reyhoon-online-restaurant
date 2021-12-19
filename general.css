@@ -30,6 +30,6 @@
 }
 
 .nav-tabs .nav-link.active{
-    background-color: white;
+    background-color: white!important;
 }
 
