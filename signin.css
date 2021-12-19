@@ -1,0 +1,27 @@
+.site-tab{
+    height: 55px;
+}
+
+.site-tab button{
+    background-color: white;
+    color: black;
+}
+
+.site-tab button.active{
+    background-color: white!important;
+    color: black!important;
+    border-color: #76a33e!important;
+    border-bottom-width: 6px!important;
+    border-top-width: 0!important;
+    border-right-width: 0!important;
+    border-left-width: 0!important;
+    border: solid;
+    border-radius: 0;
+}
+
+.site-tab .nav-link:hover{
+    color: #76a33e!important;
+}
+.site-tab .nav-link.active:hover{
+    color: black!important;
+}

@@ -1,3 +1,15 @@
+@font-face {
+    font-family: vazir;
+    src: url("fonts/Vazir.eot");
+    src: url("fonts/Vazir.woff") format("woff"),
+      url("fonts/Vazir.otf") format("opentype");
+  }
+  * {
+    direction: rtl;
+    font-family: "vazir", Arial, sans-serif;
+    font-weight: normal;
+  }
+  
 .header-searchbox{
     width: 50%;
     height: 50%;
@@ -19,4 +31,20 @@
 
 .nav-tabs .nav-link.active{
     background-color: white;
+}
+
+/* navbar css */
+.site-nav{
+    background-color: #76a33e;
+    height: 64px;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-user-text{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
