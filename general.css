@@ -14,63 +14,65 @@
 html,
 body {
   height: 100%;
-  margin: 0; 
+  margin: 0;
 }
 
 .primary-color {
-  color: blueviolet;
+  color: blueviolet !important;
 }
-.grey-text-color{
-  color: #949090;
+.primary-text-color{
+  color: blueviolet !important;
 }
-.text-bold{
-  font-weight: bold;
+.grey-text-color {
+  color: #949090 !important;
 }
-.header-searchbox{
+.text-bold {
+  font-weight: bold !important;
+}
+.header-searchbox {
   width: 50%;
   height: 50%;
-  background-color: white!important;
+  background-color: white !important;
 }
-.text-right{
+.text-right {
   text-align: right;
 }
 
-#nav-tabContent{
+#nav-tabContent {
   background-color: white !important;
 }
 
-.nav-tabs .nav-link{
+.nav-tabs .nav-link {
   background-color: #d1d1d1 !important;
   color: gray;
   width: 6.5rem;
 }
 
-.nav-tabs .nav-link.active{
-    background-color: white!important;
+.nav-tabs .nav-link.active {
+  background-color: white !important;
 }
 
-footer{
-  height: 200px;
+footer {
+  height: 300px;
   background-color: white;
 }
-.footer-icons{
+.footer-icons {
   display: flex;
   justify-content: center;
 }
-.footer-icons a{
+.footer-icons a {
   margin: 0 15px;
   color: gray;
   font-size: 15px;
 }
-.footer-links{
+.footer-links {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-links a{
+.footer-links a {
   margin: 0 15px;
   color: gray;
   font-size: 18px;
   text-decoration: none;
-
 }

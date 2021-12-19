@@ -30,20 +30,35 @@ main .card-img-top {
   min-height: -webkit-fill-available;
 }
 
-#questions,
-#thoughts{
+#questions{
   height: calc(100vh - calc(100vh - 100%));
   padding: 3rem;
   background-color: #F9F9F9;
   display: flex;
   align-items: center;
 }
-#download{
-  height: calc(100vh - calc(100vh - 100%));
-  padding: 3rem;
-  background-color:white;
+#download{ 
   display: flex;
   align-items: center;
+}
+#thoughts{
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: #F9F9F9;
+}
+#managers{
+  background: rgb(157,79,188);
+  background: radial-gradient(at top left, rgba(157,79,188,1) 0%, rgba(110,72,171,1) 100%);
+  color: white;
+  padding: 2rem;
+}
+
+#partners{
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: #F9F9F9;
 }
 .hero-text-head {
   font-weight: bold;
@@ -109,6 +124,48 @@ hr {
 }
 
 .awards{
+  padding-top: 7rem;
   display: flex;
   justify-content: center;
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
