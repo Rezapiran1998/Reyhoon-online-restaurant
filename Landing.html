@@ -18,7 +18,9 @@
 
 <body>
   <!-- Back to top button -->
-<a id="button" class="show"></a>
+<a href="#start" id="button" class="show">
+  <i class="bi bi-arrow-up-square primary-text-color"></i>
+</a>
 
   <section id="start">
     <header>
@@ -126,7 +128,7 @@
                 <img class="img-fluid" src="./img/map.jpg" alt="">
               </div>
               <div class="card-body">
-                <h6 class="card-title">نام منطقه را وارد کنید</h6>
+                <h6 class="card-title text-bold">نام منطقه را وارد کنید</h6>
                 <p class="card-text">برای شروع سفارش نام محلی که آنجا غذا را دریافت میکنید<span>،</span> وارد
                   کنید<span>.</span></p>
               </div>
@@ -138,7 +140,7 @@
                 <img class="img-fluid" src="./img/plate.jpg" alt="">
               </div>
               <div class="card-body">
-                <h6 class="card-title">رستوران و غذای مورد نظرتان را انتخاب کنید</h6>
+                <h6 class="card-title text-bold">رستوران و غذای مورد نظرتان را انتخاب کنید</h6>
                 <p class="card-text">در این مرحله می توانید رستوران و غذای مورد علاقه تان را انتخاب کنید<span>.</span>
                 </p>
               </div>
@@ -150,7 +152,7 @@
                 <img class="img-fluid" src="./img/payment.jpg" alt="">
               </div>
               <div class="card-body">
-                <h6 class="card-title">به صورت آنلاین پرداخت کنید</h6>
+                <h6 class="card-title text-bold">به صورت آنلاین پرداخت کنید</h6>
                 <p class="card-text">در انتها می توانید صورت حسابتان را به صورت آنلاین پرداخت کنید<span>.</span></p>
               </div>
             </div>
@@ -177,7 +179,7 @@
               </div>
               <div class="col-md-11">
                 <div class="card-body">
-                  <h5 class="card-title primary-color">چرا از بوفه خرید کنیم؟ </h5>
+                  <h5 class="card-title primary-color">چرا از <span class="green-text-color">بوفه</span>   خرید کنیم؟ </h5>
                   <p class="card-text text-right  grey-text-color">
                     بوفه این امکان را برای شما میاورد تا رستوران های اطرافتان را به راحتی ببینید و با
                     مشاهده منو عکس دار آن ها غذای مورد علاقه تان را براحتی سفارش دهید و درب منزل یا محل کار تحویل بگیرید
@@ -198,7 +200,7 @@
               </div>
               <div class="col-md-11">
                 <div class="card-body">
-                  <h5 class="card-title primary-color">چرا از بوفه خرید کنیم؟ </h5>
+                  <h5 class="card-title primary-color">چرا از <span class="green-text-color">بوفه</span> خرید کنیم؟ </h5>
                   <p class="card-text text-right grey-text-color">
                     بوفه این امکان را برای شما میاورد تا رستوران های اطرافتان را به راحتی ببینید و با
                     مشاهده منو عکس دار آن ها غذای مورد علاقه تان را براحتی سفارش دهید و درب منزل یا محل کار تحویل بگیرید
@@ -272,12 +274,11 @@
         <h6 class="section-title">ریحون و افکار عمومی</h6>
         <hr>
       </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4 thoughts-section">
         <div class="col-md-6 d-flex justify-content-center">
-          <div class="card h-100 shadow" style="width:19rem;">
-            <div class="profile"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg">
-            </div>
-            <div class="card-name text-center grey-text-color text-bold py-3">
+          <div class="card shadow" style="width:19rem;">
+            <img class="card-img-profile" alt="User image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg">
+            <div class="card-name text-center grey-text-color text-bold">
               امید
             </div>
             <div class="card-body">
@@ -295,10 +296,9 @@
           </div>
         </div>
         <div class="col-md-6 d-flex justify-content-center">
-          <div class="card h-100 shadow" style="width:19rem;">
-            <div class="profile"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg">
-            </div>
-            <div class="card-name text-center grey-text-color text-bold py-3">
+          <div class="card shadow" style="width:19rem;">
+            <img class="card-img-profile" alt="User image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg">
+            <div class="card-name text-center grey-text-color text-bold">
               امید
             </div>
             <div class="card-body">
@@ -333,6 +333,10 @@
   </section>
   <section id="partners">
     <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="section-title">بوفه در خبرگزاری ها</h6>
+        <hr>
+      </div>
       <div class="row text-center">
         <div class="col-md-3">
           <a href=""><img src="./img/financial.png" alt=""></a>

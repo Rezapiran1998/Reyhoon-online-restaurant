@@ -84,9 +84,7 @@ main .card-img-top {
   text-align: center;
 }
 
-.card-title {
-  font-weight: 600;
-}
+
 .offer-block h1,
 .offer-block p {
   font-weight: bold;
@@ -111,16 +109,11 @@ hr {
 .card-footer i{
   font-size: 1.5rem;
 }
-
-.profile{
-  display: flex;
-  justify-content: center;
-  margin-top: -60px;
-}
-.profile img {
-  width: 8vw;
-  height: 12vh;
-  border-radius: 50%
+.card-img-profile {
+  align-self: center;
+  border-radius: 50% !important;
+  width: 100px !important; height: 100px;
+  transform: translateY(-50%);
 }
 
 .awards{
@@ -128,43 +121,30 @@ hr {
   display: flex;
   justify-content: center;
 }
-
+.thoughts-section{
+  margin-top: 5rem !important;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 #button {
   display: inline-block;
-  background-color: #FF9800;
   width: 50px;
   height: 50px;
   text-align: center;
   border-radius: 4px;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  left: 30px;
   transition: background-color .3s, 
     opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+  font-size: 2rem;
 }
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
+
 #button.show {
   opacity: 1;
   visibility: visible;
