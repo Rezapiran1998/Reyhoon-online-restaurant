@@ -84,7 +84,7 @@ a{
 }
 
 .form-input .form-control:hover + .form-input-icon{
-    color:#d8b132;
+    color:#e68a01;
 }
 
 .form-input .form-input-icon{
@@ -109,6 +109,6 @@ a{
 }
 
 .form-check-input:checked {
-    background-color: #d1af1a;
-    border-color: #d1af1a;
+    background-color: #e68a01;
+    border-color: #e68a01;
 }
