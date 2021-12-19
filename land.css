@@ -45,7 +45,7 @@ main .card-img-top {
 
 #start{
   width: 100%;
-  
+  min-height: -webkit-fill-available;
 }
 
 #questions,
