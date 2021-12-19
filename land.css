@@ -56,8 +56,8 @@ main .card-img-top {
   width: 15rem;
 }
 .card-text {
-  color: #949090;
   font-size: 14px;
+  text-align: center;
 }
 
 .card-title {
