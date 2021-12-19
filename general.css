@@ -1,51 +1,51 @@
 @font-face {
-    font-family: vazir;
-    src: url("fonts/Vazir.eot");
-    src: url("fonts/Vazir.woff") format("woff"),
-      url("fonts/Vazir.otf") format("opentype");
-  }
-  * {
-    direction: rtl;
-    font-family: "vazir", Arial, sans-serif;
-    font-weight: normal;
-  }
-  
+  font-family: vazir;
+  src: url("fonts/Vazir.eot");
+  src: url("fonts/Vazir.woff") format("woff"),
+    url("fonts/Vazir.otf") format("opentype");
+}
+* {
+  direction: rtl;
+  font-family: "vazir", Arial, sans-serif;
+  font-weight: normal;
+}
+
 .header-searchbox{
-    width: 50%;
-    height: 50%;
-    background-color: white!important;
+  width: 50%;
+  height: 50%;
+  background-color: white!important;
 }
 .text-right{
-    text-align: right;
+  text-align: right;
 }
 
 #nav-tabContent{
-    background-color: white !important;
+  background-color: white !important;
 }
 
 .nav-tabs .nav-link{
-    background-color: #d1d1d1 !important;
-    color: gray;
-    width: 6.5rem;
+  background-color: #d1d1d1 !important;
+  color: gray;
+  width: 6.5rem;
 }
 
 .nav-tabs .nav-link.active{
-    background-color: white;
+  background-color: white;
 }
 
 /* navbar css */
 .site-nav{
-    background-color: #76a33e;
-    height: 64px;
-    color: white;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  background-color: #76a33e;
+  height: 64px;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .nav-user-text{
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    background-color: white !important;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  background-color: white !important;
 }
