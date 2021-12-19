@@ -16,8 +16,14 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
-    
+    text-align: center;
 }
+
+.nav-user-text{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
 .header{
     background-image: url("https://picsum.photos/1500/300");
     background-color: red;
@@ -25,34 +31,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.header-searchbox{
-    /* position: relative; */
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
-    width: 50%;
-    height: 50%;
-    background-color: white;
-    /* max-width: 500px; */
-    /* margin: 0 auto; */
-}
-.text-right{
-    text-align: right;
+    width: 100%;
+    margin: 0;
 }
 
-#nav-tabContent{
-    background-color: white;
-}
 
-.nav-tabs .nav-link{
-    background-color: #d1d1d1;
-    color: gray;
-    width: 6.5rem;
-}
 
-.nav-tabs .nav-link.active{
-    background-color: white;
-}
+
+
 
 main .card-img-top{
     height: 200px;
