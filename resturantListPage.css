@@ -1,3 +1,14 @@
+@font-face {
+    font-family: vazir;
+    src: url("fonts/Vazir.eot");
+    src: url("fonts/Vazir.woff") format("woff"),
+      url("fonts/Vazir.otf") format("opentype");
+  }
+  * {
+    direction: rtl;
+    font-family: "vazir", Arial, sans-serif;
+    font-weight: normal;
+  }
 .site-nav{
     background-color: #76a33e;
     height: 64px;
@@ -44,5 +55,21 @@
 }
 
 main .card-img-top{
-    width: 200px;
+    height: 200px;
+    /* width: 87%; */
+}
+
+.rounded-4{
+    border-radius: 1.5rem;
+}
+
+main .btn{
+    /* height: 41%; */
+    color: white;
+    /* font-weight: 500; */
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    width: 11.5rem;
 }
