@@ -13,18 +13,18 @@
 .header-searchbox{
     width: 50%;
     height: 50%;
-    background-color: white;
+    background-color: white!important;
 }
 .text-right{
     text-align: right;
 }
 
 #nav-tabContent{
-    background-color: white;
+    background-color: white !important;
 }
 
 .nav-tabs .nav-link{
-    background-color: #d1d1d1;
+    background-color: #d1d1d1 !important;
     color: gray;
     width: 6.5rem;
 }
@@ -47,4 +47,5 @@
 .nav-user-text{
     font-size: 1.5rem;
     line-height: 2.5rem;
+    background-color: white !important;
 }
