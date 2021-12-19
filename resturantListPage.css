@@ -1,3 +1,14 @@
+@font-face {
+    font-family: vazir;
+    src: url("fonts/Vazir.eot");
+    src: url("fonts/Vazir.woff") format("woff"),
+      url("fonts/Vazir.otf") format("opentype");
+  }
+  * {
+    direction: rtl;
+    font-family: "vazir", Arial, sans-serif;
+    font-weight: normal;
+  }
 .site-nav{
     background-color: #76a33e;
     height: 64px;
@@ -5,8 +16,14 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
-    
+    text-align: center;
 }
+
+.nav-user-text{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
 .header{
     background-image: url("https://picsum.photos/1500/300");
     background-color: red;
@@ -14,35 +31,31 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.header-searchbox{
-    /* position: relative; */
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
-    width: 50%;
-    height: 50%;
-    background-color: white;
-    /* max-width: 500px; */
-    /* margin: 0 auto; */
-}
-.text-right{
-    text-align: right;
+    width: 100%;
+    margin: 0;
 }
 
-#nav-tabContent{
-    background-color: white;
-}
 
-.nav-tabs .nav-link{
-    background-color: #d1d1d1;
-    color: gray;
-    width: 25%;
-}
 
-.nav-tabs .nav-link.active{
-    background-color: white;
-}
+
+
 
 main .card-img-top{
-    width: 200px;
+    height: 200px;
+    /* width: 87%; */
+}
+
+.rounded-4{
+    border-radius: 1.5rem;
+}
+
+main .btn{
+    /* height: 41%; */
+    color: white;
+    /* font-weight: 500; */
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    width: 11.5rem;
 }
