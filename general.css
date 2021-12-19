@@ -20,6 +20,9 @@ body {
 .primary-color {
   color: blueviolet;
 }
+.grey-text-color{
+  color: #949090;
+}
 .header-searchbox{
   width: 50%;
   height: 50%;
