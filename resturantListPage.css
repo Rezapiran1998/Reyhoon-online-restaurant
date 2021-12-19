@@ -50,5 +50,15 @@ main .btn{
 
 
 body{
-    background-color: #f5f5f5;
+    background-color: #ebebeb;
+}
+
+.btn-success{
+    background-color: #3ca853;
+    border-color: #3ca853;
+}
+
+.btn-warning{
+    background-color: #e69c3b;
+    border-color: #e69c3b;
 }

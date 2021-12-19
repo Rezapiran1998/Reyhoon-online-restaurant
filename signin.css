@@ -1,10 +1,12 @@
 .site-tab{
     height: 55px;
+    width: 100%;
 }
 
 .site-tab button{
     background-color: white;
     color: black;
+    width: 8rem;
 }
 
 .site-tab button.active{
@@ -41,4 +43,72 @@
     font-size: 1.5rem;
     line-height: 2.5rem;
     background-color: white !important;
+}
+
+.dir-ltr{
+    direction: ltr;
+}
+#form-sections .input-group{height: 2.5rem;}
+
+#form-sections .input-group *{
+    border: 0;
+    background-color: white;
+    
+}
+
+#form-sections{
+    margin-top: 3rem;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+#forget-pass-link{
+
+}
+
+#login-btn{
+    background-color: #76a33e;
+    border: 0;
+}
+
+a{
+    color: #808080;
+}
+
+
+.form-input .form-control{
+    padding-right: 2.3rem;
+    border: 0;
+}
+
+.form-input .form-control:hover + .form-input-icon{
+    color:#e68a01;
+}
+
+.form-input .form-input-icon{
+    position: relative;
+    top: -1.8rem;
+    left: -0.7rem;
+}
+
+.form-check{
+    direction: rtl;
+    text-align: right;
+}
+
+.form-check .form-check-input{
+    float: none;
+    margin-left: 0.8rem;
+}
+
+.form-check a{
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.form-check-input:checked {
+    background-color: #e68a01;
+    border-color: #e68a01;
 }
