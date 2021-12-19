@@ -43,3 +43,27 @@ body {
     background-color: white!important;
 }
 
+footer{
+  height: 200px;
+}
+.footer-icons{
+  display: flex;
+  justify-content: center;
+}
+.footer-icons a{
+  margin: 0 15px;
+  color: gray;
+  font-size: 15px;
+}
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a{
+  margin: 0 15px;
+  color: gray;
+  font-size: 18px;
+  text-decoration: none;
+
+}

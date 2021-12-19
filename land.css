@@ -76,6 +76,7 @@ hr {
   width: 40px;
   margin: 10px auto !important;
 }
-.question_title {
+.section-title {
   font-weight: bold;
+  color: #949090;
 }
