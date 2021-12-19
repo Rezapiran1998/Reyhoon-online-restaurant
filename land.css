@@ -1,3 +1,6 @@
+.container {
+  max-width: 60% !important;/*Set your own width %; */
+}
 .site-nav {
   background-color: transparent;
   height: auto;
@@ -28,14 +31,20 @@ main .card-img-top {
 }
 
 #questions,
-#thoughts {
+#thoughts{
   height: calc(100vh - calc(100vh - 100%));
   padding: 3rem;
-  background-color: #f5f5f5;
+  background-color: #F9F9F9;
   display: flex;
   align-items: center;
 }
-
+#download{
+  height: calc(100vh - calc(100vh - 100%));
+  padding: 3rem;
+  background-color:white;
+  display: flex;
+  align-items: center;
+}
 .hero-text-head {
   font-weight: bold;
   color: blueviolet;
@@ -78,4 +87,28 @@ hr {
 .section-title {
   font-weight: bold;
   color: #949090;
+}
+.card-footer{
+  background-color: white !important;
+  text-align: center;
+  border-top: none !important;
+}
+.card-footer i{
+  font-size: 1.5rem;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+}
+.profile img {
+  width: 8vw;
+  height: 12vh;
+  border-radius: 50%
+}
+
+.awards{
+  display: flex;
+  justify-content: center;
 }

@@ -14,7 +14,7 @@
 html,
 body {
   height: 100%;
-  margin: 0;  
+  margin: 0; 
 }
 
 .primary-color {
@@ -22,6 +22,9 @@ body {
 }
 .grey-text-color{
   color: #949090;
+}
+.text-bold{
+  font-weight: bold;
 }
 .header-searchbox{
   width: 50%;
