@@ -112,3 +112,18 @@ a{
     background-color: #e68a01;
     border-color: #e68a01;
 }
+
+#login-btn:hover{
+    background-color: #e68a01;
+    border-color: #e68a01;
+}
+
+#register-btn:hover{
+    background-color: #e68a01;
+    border-color: #e68a01;
+}
+
+#register-btn{
+    background-color: #76a33e;
+    border-color: #76a33e;
+}
