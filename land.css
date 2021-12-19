@@ -1,24 +1,4 @@
-@font-face {
-  font-family: vazir;
-  src: url("fonts/Vazir.eot");
-  src: url("fonts/Vazir.woff") format("woff"),
-    url("fonts/Vazir.otf") format("opentype");
-}
-* {
-  direction: rtl;
-  font-family: "vazir", Arial, sans-serif;
-  font-weight: normal;
-  margin: 0;
-}
-html,
-body {
-  height: 100%;
-  margin: 0;  
-}
 
-.primary-color {
-  color: blueviolet;
-}
 .site-nav {
   background-color: transparent;
   height: auto;
