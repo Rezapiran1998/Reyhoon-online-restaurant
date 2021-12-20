@@ -91,16 +91,20 @@ footer {
  }
 
 .yellow{
-    background-color: #e69c3b;
-    border-color: #e69c3b;
+    background-color: #e69c3b !important;
+    border-color: #e69c3b !important;
+}
+.yellow:hover{
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important; 
 }
 
 .green{
-    background-color: #76a33e;
-    border-color: #76a33e;
+    background-color: #76a33e !important;
+    border-color: #76a33e !important;
 }
 
 .gray{
-    background-color: #ebebeb;
-    border-color: #ebebeb;
+    background-color: #ebebeb !important;
+    border-color: #ebebeb !important;
 }
