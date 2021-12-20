@@ -18,7 +18,7 @@ body {
 }
 
 .primary-color {
-  color: blueviolet !important;
+  background-color: blueviolet !important;
 }
 .primary-text-color{
   color: blueviolet !important;
