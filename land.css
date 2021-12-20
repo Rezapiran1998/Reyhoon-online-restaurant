@@ -1,6 +1,10 @@
-.container {
-  max-width: 60% !important;/*Set your own width %; */
-}
+/* just for large dispalys */
+@media (min-width: 992px) { 
+  .container {
+    max-width: 60% !important;
+  }
+ }
+
 .site-nav {
   background-color: transparent;
   height: auto;
@@ -37,9 +41,12 @@ main .card-img-top {
   display: flex;
   align-items: center;
 }
+
+
 #download{ 
   display: flex;
   align-items: center;
+  padding: 3rem;
 }
 #thoughts{
   padding-top: 5rem;
@@ -149,3 +156,16 @@ hr {
   opacity: 1;
   visibility: visible;
 }
+
+@media (max-width: 576px) { 
+  #questions{
+    height: auto;
+    padding: 0;
+  }
+  #downloads{
+    padding: 0.75rem;
+  }
+  .download-img{
+    width: 75%;
+  }
+ }
