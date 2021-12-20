@@ -31,6 +31,8 @@
 main .card-img-top{
     height: 200px;
     /* width: 87%; */
+    overflow: hidden;
+    position: relative;
 }
 
 .rounded-4{
@@ -61,4 +63,26 @@ body{
 .btn-warning{
     background-color: #e69c3b;
     border-color: #e69c3b;
+}
+.video{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+.video.paused + .paused-icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: block!important;
+}
+
+.video + .paused-icon{
+    display: none;
+}
+
+.card-img-top.hover {
+    cursor: pointer;
 }
