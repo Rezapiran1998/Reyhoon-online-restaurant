@@ -1,9 +1,9 @@
 /* just for large dispalys */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .container {
     max-width: 60% !important;
   }
- }
+}
 
 .site-nav {
   background-color: transparent;
@@ -29,43 +29,46 @@ main .card-img-top {
   width: 200px;
 }
 
-#start{
+#start {
   width: 100%;
   min-height: -webkit-fill-available;
 }
 
-#questions{
+#questions {
   height: calc(100vh - calc(100vh - 100%));
   padding: 3rem;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   display: flex;
   align-items: center;
 }
 
-
-#download{ 
+#download {
   display: flex;
   align-items: center;
   padding: 3rem;
 }
-#thoughts{
+#thoughts {
   padding-top: 5rem;
   display: flex;
   align-items: center;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
-#managers{
-  background: rgb(157,79,188);
-  background: radial-gradient(at top left, rgba(157,79,188,1) 0%, rgba(110,72,171,1) 100%);
+#managers {
+  background: rgb(157, 79, 188);
+  background: radial-gradient(
+    at top left,
+    rgba(157, 79, 188, 1) 0%,
+    rgba(110, 72, 171, 1) 100%
+  );
   color: white;
   padding: 2rem;
 }
 
-#partners{
+#partners {
   padding-top: 5rem;
   display: flex;
   align-items: center;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 .hero-text-head {
   font-weight: bold;
@@ -91,7 +94,6 @@ main .card-img-top {
   text-align: center;
 }
 
-
 .offer-block h1,
 .offer-block p {
   font-weight: bold;
@@ -108,27 +110,28 @@ hr {
   font-weight: bold;
   color: #949090;
 }
-.card-footer{
+.card-footer {
   background-color: white !important;
   text-align: center;
   border-top: none !important;
 }
-.card-footer i{
+.card-footer i {
   font-size: 1.5rem;
 }
 .card-img-profile {
   align-self: center;
   border-radius: 50% !important;
-  width: 100px !important; height: 100px;
+  width: 100px !important;
+  height: 100px;
   transform: translateY(-50%);
 }
 
-.awards{
+.awards {
   padding-top: 7rem;
   display: flex;
   justify-content: center;
 }
-.thoughts-section{
+.thoughts-section {
   margin-top: 5rem !important;
 }
 
@@ -144,8 +147,7 @@ hr {
   position: fixed;
   bottom: 30px;
   left: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -155,19 +157,18 @@ hr {
 
 #button.show {
   opacity: 1;
-  visibility: visible!important;
+  visibility: visible !important;
 }
 
-@media (max-width: 576px) { 
-  #questions{
+@media (max-width: 576px) {
+  #questions {
     height: auto;
     padding: 0;
   }
-  #downloads{
+  #downloads {
     padding: 0.75rem;
   }
-  .download-img{
+  .download-img {
     width: 75%;
   }
- }
- 
+}
