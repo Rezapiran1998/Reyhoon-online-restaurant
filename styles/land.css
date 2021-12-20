@@ -49,7 +49,7 @@
   font-size: 2rem;
 }
 header {
-  background-image: url("https://picsum.photos/1500/300");
+  background-image: url("../img/banner.jpg");
   background-color: white;
   height: 400px;
   background-position: center;
