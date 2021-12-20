@@ -7,4 +7,15 @@ window.onscroll = function () {
   } else {
     document.getElementById("button").classList.remove("show");
   }
+
+  const stickyElm = document.querySelector('.site-nav');
+  if(pageOffset > 0){
+    stickyElm.classList.add('isSticky');
+  }else{
+    stickyElm.classList.remove('isSticky');
+  }
 };
+
+
+
+

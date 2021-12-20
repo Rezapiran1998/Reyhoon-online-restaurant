@@ -7,22 +7,55 @@
 
 .site-nav {
   background-color: transparent;
-  height: auto;
+  /* height: auto; */
   color: white;
-  font-size: 1rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
 }
+
+.site-nav.isSticky{
+    position: fixed;
+    background-color: #76a33e;
+    z-index: 100;
+    background-color: #76a33e;
+    height: 64px;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* padding: 1rem; */
+}
+.site-nav .text-center{
+    margin-top: 3rem;
+}
+
+.site-nav.isSticky .text-center{
+    margin-top: 0;
+    line-height: 0rem;
+    padding-top: .5rem;
+}
+.site-nav.isSticky .text-center > p{
+    /* display: none; */
+    visibility: hidden;
+}
+
 .logo {
   font-size: 2rem;
 }
 header {
   background-image: url("https://picsum.photos/1500/300");
   background-color: white;
-  height: 300px;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 7rem;
 }
 
 main .card-img-top {
