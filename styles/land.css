@@ -150,11 +150,12 @@ hr {
   visibility: hidden;
   z-index: 1000;
   font-size: 2rem;
+  visibility: hidden;
 }
 
 #button.show {
   opacity: 1;
-  visibility: visible;
+  visibility: visible!important;
 }
 
 @media (max-width: 576px) { 

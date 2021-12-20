@@ -1,438 +1,475 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Ashkan Ganj, Mohammad Hossein Fallah</title>
+    <title>Ashkan Ganj, Mohammad Hossein Fallah</title>
 
-  <link rel="stylesheet" href="./styles/general.css">
-  <link rel="stylesheet" href="./styles/land.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/land.css">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <script src="./js/land.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="./js/land.js"></script>
 </head>
 
 <body>
-  <!-- Back to top button -->
-<a href="#start" id="button" class="show">
-  <i class="bi bi-arrow-up-square primary-text-color"></i>
-</a>
+    <!-- Back to top button -->
+    <a href="#start" id="button" class="">
+        <i class="bi bi-arrow-up-square primary-text-color"></i>
+    </a>
 
-  <section id="start">
-    <header>
-      <nav class="site-nav">
+    <section id="start">
+        <header>
+            <nav class="site-nav">
+                <div class="container">
+                    <div class="row align-items-center mt-3">
+                        <div class="col-12 text-right">
+                            <i class="bi bi-person-fill"></i>
+                            بهمن عظیمی
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="row ">
+                            <div class="col-12 justify-content-center">
+                                <div class="text-center ">
+                                    <i class="bi bi-diamond logo"></i>
+                                    <p>بوفه</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header mx-0 row justify-content-center align-items-center mb-4">
+                <div class="col-md-4 col-sm-7" style="direction: rtl">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">
+                            نوع اول
+                        </button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                            نوع دوم
+                        </button>
+                    </div>
+
+                    <div class="tab-content rounded-bottom" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="row justify-content-start align-items-center p-2">
+                                <div class="col-lg-8 col-md-12 col-sm-12 mb-lg-0 mb-sm-2">
+                                    <input type="password" class="form-control" id="search1"
+                                        placeholder="دنبال چی میگردی؟" />
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <button type="submit" class="btn btn-warning w-100">
+                                        <i class="bi bi-search"></i> جستجو
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="row justify-content-start align-items-center p-2">
+                                <div class="col-8">
+                                    <input type="password" class="form-control" id="search1"
+                                        placeholder="دنبال چی میگردی 2 ؟" />
+                                </div>
+                                <div class="col-4">
+                                    <button type="submit" class="btn btn-warning w-100">
+                                        <i class="bi bi-search"></i> جستجو
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="text-center">
+            <a href="#questions">
+                <i style="font-size: 15px;" class="bi bi-chevron-down"></i>
+            </a>
+        </div>
+
+        <main class="mt-4">
+            <div class="container">
+                <div
+                    class="d-flex justify-content-center align-items-center text-center flex-column align-items-center mb-5">
+                    <div class="offer-block">
+                        <h1>10% تخفیف</h1>
+                        <p>همه رستوران ها<span>،</span>همه غذاها</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./img/sub-logo.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-center align-items-center text-center">
+                    <div>
+                        <h4 class="hero-text-head mb-4">سفارش آنلاین غذا از رستوران های تهران</h3>
+                            <p class="hero-text-par">
+                                <span>ریحون سرویس سفارش آنلاین غذاست <span>.</span></span>
+                                <span>با ریحون خیلی راحت می تونید هرجایی که هستید <span>،</span></span>
+
+                            </p>
+                            <p class="hero-text-par">رستوران های اطرافتون رو ببینید و غذای مورد علاقتون روآنلاین سفارش
+                                بدید
+                                <span>.</span>
+                            </p>
+                    </div>
+
+                </div>
+                <div class="row mt-1 mb-5">
+                    <div class="col-md-4 d-flex justify-content-center ">
+                        <div class="card text-center border-0">
+                            <div class="card-img">
+                                <img class="img-fluid" src="./img/map.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title text-bold">نام منطقه را وارد کنید</h6>
+                                <p class="card-text">برای شروع سفارش نام محلی که آنجا غذا را دریافت میکنید<span>،</span>
+                                    وارد
+                                    کنید<span>.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card text-center border-0">
+                            <div class="card-img">
+                                <img class="img-fluid" src="./img/plate.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title text-bold">رستوران و غذای مورد نظرتان را انتخاب کنید</h6>
+                                <p class="card-text">در این مرحله می توانید رستوران و غذای مورد علاقه تان را انتخاب
+                                    کنید<span>.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card text-center border-0">
+                            <div class="card-img">
+                                <img class="img-fluid" src="./img/payment.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title text-bold">به صورت آنلاین پرداخت کنید</h6>
+                                <p class="card-text">در انتها می توانید صورت حسابتان را به صورت آنلاین پرداخت
+                                    کنید<span>.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </section>
+    <section id="questions">
         <div class="container">
-          <div class="row align-items-center mt-3">
-            <div class="col-12 text-right">
-              <i class="bi bi-person-fill"></i>
-              بهمن عظیمی
+            <div class="text-center mb-5">
+                <h6 class="section-title">پرسش و پاسخ های متداول</h6>
+                <hr>
             </div>
-
-          </div>
-          <div>
-            <div class="row ">
-              <div class="col-12 justify-content-center">
-                <div class="text-center ">
-                  <i class="bi bi-diamond logo"></i>
-                  <p>بوفه</p>
+            <div class="row">
+                <div class="col-12 mb-3 ">
+                    <div class="card w-100 m-auto">
+                        <div class="row g-0">
+                            <div class=" col-md-2 d-none d-sm-none d-md-flex align-items-center justify-content-center">
+                                <div class="horz-card-icon">
+                                    <i class="bi bi-question-circle"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10 col-sm-12 col-12">
+                                <div class="card-body">
+                                    <h5 class="card-title primary-text-color">چرا از <span
+                                            class="green-text-color">بوفه</span> خرید کنیم؟ </h5>
+                                    <p class="card-text text-right  grey-text-color">
+                                        بوفه این امکان را برای شما میاورد تا رستوران های اطرافتان را به راحتی ببینید و
+                                        با
+                                        مشاهده منو عکس دار آن ها غذای مورد علاقه تان را براحتی سفارش دهید و درب منزل یا
+                                        محل کار تحویل بگیرید
+                                        <span>.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-12 mb-3">
+                    <div class="card w-100 m-auto">
+                        <div class="row g-0">
+                            <div class="col-md-2 d-none d-sm-none d-md-flex align-items-center justify-content-center">
+                                <div class="horz-card-icon">
+                                    <i class="bi bi-question-circle"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10 col-sm-12 col-12">
+                                <div class="card-body">
+                                    <h5 class="card-title primary-text-color">چرا از <span
+                                            class="green-text-color">بوفه</span> خرید کنیم؟ </h5>
+                                    <p class="card-text text-right grey-text-color">
+                                        بوفه این امکان را برای شما میاورد تا رستوران های اطرافتان را به راحتی ببینید و
+                                        با
+                                        مشاهده منو عکس دار آن ها غذای مورد علاقه تان را براحتی سفارش دهید و درب منزل یا
+                                        محل کار تحویل بگیرید
+                                        <span>.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <div class="card w-100 m-auto">
+                        <div class="row g-0">
+                            <div class="col-md-2 d-none d-sm-none d-md-flex align-items-center justify-content-center">
+                                <div class="horz-card-icon">
+                                    <i class="bi bi-question-circle"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10 col-sm-12 col-12">
+                                <div class="card-body">
+                                    <h5 class="card-title primary-text-color">چرا از بوفه خرید کنیم؟ </h5>
+                                    <p class="card-text text-right grey-text-color">
+                                        بوفه این امکان را برای شما میاورد تا رستوران های اطرافتان را به راحتی ببینید و
+                                        با
+                                        مشاهده منو عکس دار آن ها غذای مورد علاقه تان را براحتی سفارش دهید و درب منزل یا
+                                        محل کار تحویل بگیرید
+                                        <span>.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-          </div>
         </div>
-      </nav>
+    </section>
+    <section id="download ">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 text-right d-flex flex-column justify-content-center align-items-start">
+                    <h3 class="text-bold w-100 mb-4">سفارشت رو همین الان شروع کن</h3>
+                    <p class="w-100">برای دریافت لینک دانلود اپلیکشن ریحون<span>،</span>شماره موبایل خود را وارد کنید
+                    </p>
 
-      <div class="header mx-0 row justify-content-center align-items-center mb-4">
-        <div class="col-md-4 col-sm-7" style="direction: rtl">
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-              type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-              نوع اول
-            </button>
-            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-              نوع دوم
-            </button>
-          </div>
+                    <div class="input-group w-75" style="direction: ltr;">
+                        <span class="input-group-text">+98</span>
+                        <input type="text" class="form-control" id="inputGroupFile04" placeholder="مثال : 912****55 ">
+                        <button class="btn btn-outline-secondary primary-color text-white" type="button"
+                            id="inputGroupFileAddon04">دریافت لینک</button>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <a href="">
+                                <img class="download-img img-fluid" src="./img/googleplay.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="">
+                                <img class="download-img img-fluid" src="./img/appstore.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="tab-content rounded-bottom" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-              <div class="row justify-content-start align-items-center p-2">
-                <div class="col-lg-8 col-md-12 col-sm-12 mb-lg-0 mb-sm-2">
-                  <input type="password" class="form-control" id="search1" placeholder="دنبال چی میگردی؟" />
+                <div class="col-md-6 d-none d-sm-none d-md-flex">
+                    <img class="img-fluid" src="./img/mobile.png" alt="">
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <button type="submit" class="btn btn-warning w-100">
-                    <i class="bi bi-search"></i> جستجو
-                  </button>
-                </div>
-              </div>
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <div class="row justify-content-start align-items-center p-2">
-                <div class="col-8">
-                  <input type="password" class="form-control" id="search1" placeholder="دنبال چی میگردی 2 ؟" />
-                </div>
-                <div class="col-4">
-                  <button type="submit" class="btn btn-warning w-100">
-                    <i class="bi bi-search"></i> جستجو
-                  </button>
-                </div>
-              </div>
+        </div>
+
+    </section>
+    <section id="thoughts">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="section-title">ریحون و افکار عمومی</h6>
+                <hr>
             </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="text-center">
-      <a href="#questions">
-        <i style="font-size: 15px;" class="bi bi-chevron-down"></i>
-      </a>
-    </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 thoughts-section">
+                <div class="col-md-6 mb-5 d-flex justify-content-center">
+                    <div class="card shadow" style="width:19rem;">
+                        <img class="card-img-profile" alt="User image"
+                            src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg">
+                        <div class="card-name text-center grey-text-color text-bold">
+                            امید
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-bold">امروز اپ <span class=" grey-text-color">#بوفه</span> پشتیبانی
+                                کاربر رو جوری
+                                به معنای واقعی انجام داد و لحظه به
+                                لحظه پیگیری کرد که عاشقش شدم<span>!</span>یکم بقیه اپ های ایرانی یاد بگیرن.</p>
+                        </div>
+                        <div class="card-footer p-4">
+                            <small class="text-center">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="myAccount"><i
+                                        class="bi bi-twitter"></i></a>
+                            </small>
 
-    <main class="mt-4">
-      <div class="container">
-        <div class="d-flex justify-content-center align-items-center text-center flex-column align-items-center mb-5">
-          <div class="offer-block">
-            <h1>10% تخفیف</h1>
-            <p>همه رستوران ها<span>،</span>همه غذاها</p>
-          </div>
-          <div>
-            <img class="img-fluid" src="./img/sub-logo.jpg" alt="">
-          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5 d-flex justify-content-center">
+                    <div class="card shadow" style="width:19rem;">
+                        <img class="card-img-profile" alt="User image"
+                            src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg">
+                        <div class="card-name text-center grey-text-color text-bold">
+                            امید
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-bold">امروز اپ <span class=" grey-text-color">#بوفه</span> پشتیبانی
+                                کاربر رو جوری
+                                به معنای واقعی انجام داد و لحظه به
+                                لحظه پیگیری کرد که عاشقش شدم<span>!</span>یکم بقیه اپ های ایرانی یاد بگیرن.</p>
+                        </div>
+                        <div class="card-footer p-4">
+                            <small class="text-center">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="myAccount"><i
+                                        class="bi bi-twitter"></i></a>
+                            </small>
 
-        </div>
-        <div class="d-flex justify-content-center align-items-center text-center">
-          <div>
-            <h4 class="hero-text-head mb-4">سفارش آنلاین غذا از رستوران های تهران</h3>
-              <p class="hero-text-par">
-                <span>ریحون سرویس سفارش آنلاین غذاست <span>.</span></span>
-                <span>با ریحون خیلی راحت می تونید هرجایی که هستید <span>،</span></span>
-
-              </p>
-              <p class="hero-text-par">رستوران های اطرافتون رو ببینید و غذای مورد علاقتون روآنلاین سفارش بدید
-                <span>.</span>
-              </p>
-          </div>
-
-        </div>
-        <div class="row mt-1 mb-5">
-          <div class="col-md-4 d-flex justify-content-center ">
-            <div class="card text-center border-0">
-              <div class="card-img">
-                <img class="img-fluid" src="./img/map.jpg" alt="">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title text-bold">نام منطقه را وارد کنید</h6>
-                <p class="card-text">برای شروع سفارش نام محلی که آنجا غذا را دریافت میکنید<span>،</span> وارد
-                  کنید<span>.</span></p>
-              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="card text-center border-0">
-              <div class="card-img">
-                <img class="img-fluid" src="./img/plate.jpg" alt="">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title text-bold">رستوران و غذای مورد نظرتان را انتخاب کنید</h6>
-                <p class="card-text">در این مرحله می توانید رستوران و غذای مورد علاقه تان را انتخاب کنید<span>.</span>
+            <div class="awards">
+                <img class="img-fluid" src="./img/awards.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="managers">
+        <div class="container">
+            <div class="my-5 text-center">
+                <h3 class="text-bold pb-3">مدیران رستوران</h3>
+                <p>در بوفه با هزینه بسیار کمتری بیشتر شناخته میشوید و به جامعه بزرگتری از مشتریان درسترسی خواهید داشت.
                 </p>
-              </div>
+                <a class="btn btn-light text-bold shadow px-5 primary-text-color">ثبت رستوران</a>
             </div>
-          </div>
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="card text-center border-0">
-              <div class="card-img">
-                <img class="img-fluid" src="./img/payment.jpg" alt="">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title text-bold">به صورت آنلاین پرداخت کنید</h6>
-                <p class="card-text">در انتها می توانید صورت حسابتان را به صورت آنلاین پرداخت کنید<span>.</span></p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
 
-    </main>
-  </section>
-  <section id="questions">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h6 class="section-title">پرسش و پاسخ های متداول</h6>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-12 mb-3 ">
-          <div class="card w-100 m-auto">
-            <div class="row g-0"> 
-              <div class=" col-md-2 d-none d-sm-none d-md-flex align-items-center justify-content-center">
-                <div class="horz-card-icon">
-                  <i class="bi bi-question-circle"></i>
+    </section>
+    <section id="partners">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="section-title">بوفه در خبرگزاری ها</h6>
+                <hr>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <a href=""><img src="./img/financial.png" alt=""></a>
                 </div>
-              </div>
-              <div class="col-md-10 col-sm-12 col-12">
-                <div class="card-body">
-                  <h5 class="card-title primary-text-color">چرا از <span class="green-text-color">بوفه</span>   خرید کنیم؟ </h5>
-                  <p class="card-text text-right  grey-text-color">
-                    بوفه این امکان را برای شما میاورد تا رستوران های اطرافتان را به راحتی ببینید و با
-                    مشاهده منو عکس دار آن ها غذای مورد علاقه تان را براحتی سفارش دهید و درب منزل یا محل کار تحویل بگیرید
-                    <span>.</span>
-                  </p>
+                <div class="col-md-3">
+                    <a href=""><img src="./img/zoomit.png" alt=""></a>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 mb-3">
-          <div class="card w-100 m-auto">
-            <div class="row g-0">
-              <div class="col-md-2 d-none d-sm-none d-md-flex align-items-center justify-content-center">
-                <div class="horz-card-icon">
-                  <i class="bi bi-question-circle"></i>
+                <div class="col-md-3">
+                    <a href="">
+                        <img src="./img/digiato.png" alt="">
+                    </a>
                 </div>
-              </div>
-              <div class="col-md-10 col-sm-12 col-12">
-                <div class="card-body">
-                  <h5 class="card-title primary-text-color">چرا از <span class="green-text-color">بوفه</span> خرید کنیم؟ </h5>
-                  <p class="card-text text-right grey-text-color">
-                    بوفه این امکان را برای شما میاورد تا رستوران های اطرافتان را به راحتی ببینید و با
-                    مشاهده منو عکس دار آن ها غذای مورد علاقه تان را براحتی سفارش دهید و درب منزل یا محل کار تحویل بگیرید
-                    <span>.</span>
-                  </p>
+                <div class="col-md-3">
+                    <a href="">
+                        <img src="./img/news.png" alt="">
+                    </a>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 mb-3">
-          <div class="card w-100 m-auto">
-            <div class="row g-0">
-              <div class="col-md-2 d-none d-sm-none d-md-flex align-items-center justify-content-center">
-                <div class="horz-card-icon">
-                  <i class="bi bi-question-circle"></i>
+                <div class="col-md-3">
+                    <a href=""><img src="./img/financial.png" alt=""></a>
                 </div>
-              </div>
-              <div class="col-md-10 col-sm-12 col-12">
-                <div class="card-body">
-                  <h5 class="card-title primary-text-color">چرا از بوفه خرید کنیم؟ </h5>
-                  <p class="card-text text-right grey-text-color">
-                    بوفه این امکان را برای شما میاورد تا رستوران های اطرافتان را به راحتی ببینید و با
-                    مشاهده منو عکس دار آن ها غذای مورد علاقه تان را براحتی سفارش دهید و درب منزل یا محل کار تحویل بگیرید
-                    <span>.</span>
-                  </p>
+                <div class="col-md-3">
+                    <a href=""><img src="./img/zoomit.png" alt=""></a>
                 </div>
-              </div>
+                <div class="col-md-3">
+                    <a href="">
+                        <img src="./img/digiato.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="">
+                        <img src="./img/news.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href=""><img src="./img/financial.png" alt=""></a>
+                </div>
+                <div class="col-md-3">
+                    <a href=""><img src="./img/zoomit.png" alt=""></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="">
+                        <img src="./img/digiato.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="">
+                        <img src="./img/news.png" alt="">
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section id="download ">
-    <div class="container pt-5">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 text-right d-flex flex-column justify-content-center align-items-start">
-          <h3 class="text-bold w-100 mb-4">سفارشت رو همین الان شروع کن</h3>
-          <p class="w-100">برای دریافت لینک دانلود اپلیکشن ریحون<span>،</span>شماره موبایل خود را وارد کنید</p>
-
-          <div class="input-group w-75" style="direction: ltr;">
-            <span class="input-group-text">+98</span>
-            <input type="text" class="form-control" id="inputGroupFile04" placeholder="مثال : 912****55 ">
-            <button class="btn btn-outline-secondary primary-color text-white" type="button" id="inputGroupFileAddon04">دریافت لینک</button>
-          </div>
-          <div class="row mt-3">
-            <div class="col-6">
-              <a href="">
-                <img class="download-img img-fluid" src="./img/googleplay.png" alt="">
-              </a>
+    </section>
+    <footer class="pt-1">
+        <div class="container">
+            <div class="footer-icons my-5">
+                <a href="">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-facebook"></i>
+                </a>
             </div>
-            <div class="col-6">
-              <a href="">
-                <img class="download-img img-fluid" src="./img/appstore.png" alt="">
-              </a>
+            <div class="footer-links my-5">
+                <a href="">
+                    سوالات متداول
+                </a>
+                <a href="">
+                    درباره ی ما
+                </a>
+                <a href="">
+                    بلاگ
+                </a>
+                <a href="">
+                    قوانین و مقررات
+                </a>
+                <a href="">
+                    تماس با ما
+                </a>
             </div>
-          </div>
         </div>
-
-        <div class="col-md-6 d-none d-sm-none d-md-flex">
-          <img class="img-fluid" src="./img/mobile.png" alt="">
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <section id="thoughts">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h6 class="section-title">ریحون و افکار عمومی</h6>
-        <hr>
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4 thoughts-section">
-        <div class="col-md-6 mb-5 d-flex justify-content-center">
-          <div class="card shadow" style="width:19rem;">
-            <img class="card-img-profile" alt="User image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg">
-            <div class="card-name text-center grey-text-color text-bold">
-              امید
-            </div>
-            <div class="card-body">
-              <p class="card-text text-bold">امروز اپ <span class=" grey-text-color">#بوفه</span> پشتیبانی کاربر رو جوری
-                به معنای واقعی انجام داد و لحظه به
-                لحظه پیگیری کرد که عاشقش شدم<span>!</span>یکم بقیه اپ های ایرانی یاد بگیرن.</p>
-            </div>
-            <div class="card-footer p-4">
-              <small class="text-center">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="myAccount"><i
-                    class="bi bi-twitter"></i></a>
-              </small>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-5 d-flex justify-content-center">
-          <div class="card shadow" style="width:19rem;">
-            <img class="card-img-profile" alt="User image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg">
-            <div class="card-name text-center grey-text-color text-bold">
-              امید
-            </div>
-            <div class="card-body">
-              <p class="card-text text-bold">امروز اپ <span class=" grey-text-color">#بوفه</span> پشتیبانی کاربر رو جوری
-                به معنای واقعی انجام داد و لحظه به
-                لحظه پیگیری کرد که عاشقش شدم<span>!</span>یکم بقیه اپ های ایرانی یاد بگیرن.</p>
-            </div>
-            <div class="card-footer p-4">
-              <small class="text-center">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="myAccount"><i
-                    class="bi bi-twitter"></i></a>
-              </small>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="awards">
-        <img class="img-fluid" src="./img/awards.png" alt="">
-      </div>
-    </div>
-  </section>
-  <section id="managers">
-    <div class="container">
-      <div class="my-5 text-center">
-        <h3 class="text-bold pb-3">مدیران رستوران</h3>
-        <p>در بوفه با هزینه بسیار کمتری بیشتر شناخته میشوید و به جامعه بزرگتری از مشتریان درسترسی خواهید داشت.</p>
-        <a class="btn btn-light text-bold shadow px-5 primary-text-color">ثبت رستوران</a>
-      </div>
-    </div>
-
-  </section>
-  <section id="partners">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h6 class="section-title">بوفه در خبرگزاری ها</h6>
-        <hr>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-3">
-          <a href=""><img src="./img/financial.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-          <a href=""><img src="./img/zoomit.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <img src="./img/digiato.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <img src="./img/news.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href=""><img src="./img/financial.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-          <a href=""><img src="./img/zoomit.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <img src="./img/digiato.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <img src="./img/news.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href=""><img src="./img/financial.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-          <a href=""><img src="./img/zoomit.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <img src="./img/digiato.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <img src="./img/news.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="pt-1">
-    <div class="container">
-      <div class="footer-icons my-5">
-        <a href="">
-          <i class="bi bi-envelope"></i>
-        </a>
-        <a href="">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="">
-          <i class="bi bi-twitter"></i>
-        </a>
-        <a href="">
-          <i class="bi bi-facebook"></i>
-        </a>
-      </div>
-      <div class="footer-links my-5">
-        <a href="">
-          سوالات متداول
-        </a>
-        <a href="">
-          درباره ی ما
-        </a>
-        <a href="">
-          بلاگ
-        </a>
-        <a href="">
-          قوانین و مقررات
-        </a>
-        <a href="">
-          تماس با ما
-        </a>
-      </div>
-    </div>
 
 
-  </footer>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    </footer>
+
+    <script>
+        // hide scroll to top button
+        window.onscroll = function () {
+            var pageOffset = document.documentElement.scrollTop || document.body.scrollTop;
+            if (pageOffset >= 500) {
+                document.getElementById('button').classList.add('show');
+            }else{
+                document.getElementById('button').classList.remove('show');
+            }
+        };
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
