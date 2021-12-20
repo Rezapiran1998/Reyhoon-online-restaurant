@@ -89,3 +89,18 @@ footer {
     font-size: 15px;
   }
  }
+
+.yellow{
+    background-color: #e69c3b;
+    border-color: #e69c3b;
+}
+
+.green{
+    background-color: #76a33e;
+    border-color: #76a33e;
+}
+
+.gray{
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+}
