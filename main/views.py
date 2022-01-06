@@ -8,7 +8,3 @@ def index(request):
 
 def restaurant(request):
     return render(request, 'resturantListPage.html', {})
-
-
-def login(request):
-    pass

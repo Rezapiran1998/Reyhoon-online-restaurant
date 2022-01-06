@@ -1,3 +1,6 @@
+body {
+    background-color: #ebebeb;
+}
 .site-tab{
     height: 55px;
     width: 100%;
@@ -60,13 +63,6 @@
     margin-top: 3rem;
 }
 
-body{
-    background-color: #ebebeb;
-}
-
-#forget-pass-link{
-
-}
 
 #login-btn{
     background-color: #76a33e;
