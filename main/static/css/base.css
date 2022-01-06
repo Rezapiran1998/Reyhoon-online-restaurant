@@ -19,7 +19,7 @@ body {
 
 .primary-color {
   background-color: blueviolet !important;
-}
+} 
 .primary-text-color{
   color: blueviolet !important;
 }
@@ -107,4 +107,9 @@ footer {
 .gray{
     background-color: #ebebeb !important;
     border-color: #ebebeb !important;
+}
+
+
+.nav-tabs .nav-link {
+  border-radius: 0!important;
 }

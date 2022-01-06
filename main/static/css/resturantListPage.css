@@ -1,4 +1,6 @@
-
+main{
+    background-color: #ebebeb;
+}
 /* navbar css */
 .site-nav{
     background-color: #76a33e;
@@ -36,7 +38,7 @@ main .card-img-top{
 }
 
 .rounded-4{
-    border-radius: 1.5rem;
+    border-radius: 1.5rem!important;
 }
 
 main .btn{

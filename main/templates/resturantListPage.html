@@ -1,0 +1,224 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/resturantListPage.css' %}">
+{% endblock %}
+{% block header %}
+<nav class="site-nav">
+  <div class="container">
+      <div class="row align-items-center">
+          <!-- <div class="row justify-content-center align-items-center"> -->
+          <div class="row justify-content-between">
+              <div class="col-4 text-right nav-user">
+                  <i class="bi bi-person-fill"></i>
+                  لطفی
+              </div>
+              <div class="col-4 text-center">
+                  <i class="bi bi-diamond"></i>
+              </div>
+              <div class="col-4"></div>
+          </div>
+          <!-- </div> -->
+      </div>
+  </div>
+</nav>
+
+<header class=" m-0 header row justify-content-center align-items-center">
+  <div class="col-md-4 col-sm-7" style="direction: rtl">
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+              type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+              نوع اول
+          </button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+              نوع دوم
+          </button>
+      </div>
+
+      <div class="tab-content rounded-bottom" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="row justify-content-start align-items-center p-2">
+                  <div class="col-lg-8 col-md-12 col-sm-12 mb-lg-0 mb-sm-2">
+                      <input type="password" class="form-control" id="search1" placeholder="دنبال چی میگردی؟" />
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                      <button type="submit" class="btn btn-warning w-100">
+                          <i class="bi bi-search"></i> جستجو
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="row justify-content-start align-items-center p-2">
+                  <div class="col-8">
+                      <input type="password" class="form-control" id="search1"
+                          placeholder="دنبال چی میگردی 2 ؟" />
+                  </div>
+                  <div class="col-4">
+                      <button type="submit" class="btn btn-warning w-100">
+                          <i class="bi bi-search"></i> جستجو
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+{% endblock %}
+{% block content %}
+<main class="py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3 col-md-6 col-xsm-1 mb-4">
+              <div class="card align-items-center shadow rounded-0 p-3 pb-0">
+                  <!-- <img
+          src="https://picsum.photos/200?random=1"
+          class="card-img-top rounded-4"
+        /> -->
+                  <div class="card-img-top hover rounded-4" onclick="playPause(this);">
+                      <video class="video paused">
+                          <source src="../static/videos/mov_bbb.mp4" type="video/mp4">
+                          <source src="mov_bbb.ogg" type="video/ogg">
+                          Your browser does not support HTML video.
+                      </video>
+                      <img class="paused-icon" src="../static/img/pause.png">
+                  </div>
+                  <div class="card-body text-center">
+                      <h5 class="card-title">آشپزی</h5>
+                      <p class="card-text">
+                          <span class="badge bg-danger">85</span>
+                          <i class="bi bi-star-fill text-secondary"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                      </p>
+                      <p class="text-black-50">ورامین، شهرام</p>
+                      <div class="row px-2">
+                          <a href="#" class="col btn btn-warning rounded-pill">شش ماه ضمانت</a>
+                          <!-- <a href="#" class="col btn btn-success rounded-pill">صددرصد طبیعی</a> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xsm-1 mb-4">
+              <div class="card align-items-center shadow rounded-0 p-3 pb-0">
+                  <img src="../static/img/1.jpg" class="card-img-top rounded-4" />
+                  <div class="card-body text-center">
+                      <h5 class="card-title">آشپزی</h5>
+                      <p class="card-text">
+                          <span class="badge bg-danger">85</span>
+                          <i class="bi bi-star-fill text-secondary"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                      </p>
+                      <p class="text-black-50">ورامین، شهرام</p>
+                      <div class="row px-2">
+                          <!-- <a href="#" class="col btn btn-warning rounded-pill">شش ماه ضمانت</a> -->
+                          <a href="#" class="col btn btn-success rounded-pill">صددرصد طبیعی</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-xsm-1 mb-4">
+              <div class="card align-items-center shadow rounded-0 p-3 pb-0">
+                  <img src="../static/img/2.jpg" class="card-img-top rounded-4" />
+                  <div class="card-body text-center">
+                      <h5 class="card-title">آشپزی</h5>
+                      <p class="card-text">
+                          <span class="badge bg-danger">85</span>
+                          <i class="bi bi-star-fill text-secondary"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                      </p>
+                      <p class="text-black-50">ورامین، شهرام</p>
+
+                      <div class="row px-2 justify-content-between">
+                          <a href="#" class="col btn btn-warning rounded-pill mx-3">شش ماه ضمانت</a>
+                          <a href="#" class="col btn btn-success rounded-pill mx-3">صددرصد طبیعی</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-6 col-md-12 col-xsm-1 mb-4">
+              <div class="card align-items-center shadow rounded-0 p-3 pb-0">
+                  <img src="../static/img/3.jpg" class="card-img-top rounded-4" />
+                  <div class="card-body text-center">
+                      <h5 class="card-title">آشپزی</h5>
+                      <p class="card-text">
+                          <span class="badge bg-danger">85</span>
+                          <i class="bi bi-star-fill text-secondary"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                      </p>
+                      <p class="text-black-50">ورامین، شهرام</p>
+
+                      <div class="row px-2 justify-content-between">
+                          <a href="#" class="col btn btn-warning rounded-pill mx-3">شش ماه ضمانت</a>
+                          <a href="#" class="col btn btn-success rounded-pill mx-3">صددرصد طبیعی</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xsm-1 mb-4">
+              <div class="card align-items-center shadow rounded-0 p-3 pb-0">
+                  <img src="../static/img/4.jpg" class="card-img-top rounded-4" />
+                  <div class="card-body text-center">
+                      <h5 class="card-title">آشپزی</h5>
+                      <p class="card-text">
+                          <span class="badge bg-danger">85</span>
+                          <i class="bi bi-star-fill text-secondary"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                      </p>
+                      <p class="text-black-50">ورامین، شهرام</p>
+                      <div class="row px-2">
+                          <a href="#" class="col btn btn-warning rounded-pill">شش ماه ضمانت</a>
+                          <!-- <a href="#" class="col btn btn-success rounded-pill">صددرصد طبیعی</a> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xsm-1 mb-4">
+              <div class="card align-items-center shadow rounded-0 p-3 pb-0">
+                  <img src="../static/img/5.jpg" class="img-fluid card-img-top rounded-4" />
+                  <div class="card-body text-center">
+                      <h5 class="card-title">آشپزی</h5>
+                      <p class="card-text">
+                          <span class="badge bg-danger">85</span>
+                          <i class="bi bi-star-fill text-secondary"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                      </p>
+                      <p class="text-black-50">ورامین، شهرام</p>
+
+                      <div class="row px-2">
+                          <!-- <a href="#" class="col btn btn-warning rounded-pill">شش ماه ضمانت</a> -->
+                          <a href="#" class="col btn btn-success rounded-pill">صددرصد طبیعی</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}
