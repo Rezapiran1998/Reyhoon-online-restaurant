@@ -15,7 +15,7 @@ def login(request):
             return render(request, 'login.html', {'error': 'Password or username  not match'})
     return render(request, 'login.html')
 
-def logout(request):
+def logout(request): 
     logout(request)
     
     # Redirect to a success page.
