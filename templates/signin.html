@@ -42,7 +42,7 @@
           </div>
           <div class="form-input">
             <input
-              type="text"
+              type="password"
               class="form-control"
               placeholder="رمز ورود"
               aria-describedby="basic-addon1"
@@ -52,7 +52,7 @@
           </div>
           <div class="form-input">
             <input
-              type="text"
+              type="password"
               class="form-control"
               placeholder="رمز ورود"
               aria-describedby="basic-addon1"
@@ -77,6 +77,13 @@
             </button>
           </div>
         </form>
+        {% if error %}
+        <div class="my-4">
+          <div class="alert alert-danger" role="alert">
+            {{error}}
+          </div>
+        </div>
+        {% endif %}
       </div>
     </div>
   </div>

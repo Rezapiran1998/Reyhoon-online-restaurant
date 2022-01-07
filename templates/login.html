@@ -1,61 +1,83 @@
 {% extends 'base.html' %} {% load static %} {% block head %}
 <link rel="stylesheet" href="{% static 'css/signin.css' %}" />
 {% endblock %}{% block content %}
-  <div class="row m-0 w-100 mb-4">
-    <div class="bg-white shadow mb-4 d-flex justify-content-center align-item-center ">
-        <ul class="nav flex-nowrap">
-          <li class="nav-item">
-            <a class="nav-link h-100 text-center" aria-current="page" href="/account/register">ثبت نام</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link h-100 text-center active" href="/account/login">ورود</a>
-          </li>
-          
-        </ul>
-      </div>
-    <div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col col-sm-7 col-md-4 col-lg-3">
-              <h2 class="text-center text-black-50 mb-5">ورود</h2>
-              <form method="post">
-                {% csrf_token %} 
-                <div class="form-input">    
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="ایمیل یا شماره تلفن"
-                    aria-describedby="basic-addon1"
-                    name="logEmail"
-                    id="email"
-                  />
-                  <i class="bi bi-envelope-fill form-input-icon"></i>
-                </div>
-                <div class="form-input">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="رمز ورود"
-                    aria-describedby="basic-addon1"
-                    name="logEmail"
-                    id="password"
-                  />
-                  <i class="bi bi-lock-fill form-input-icon"></i>
-                </div>
-                <a href="http://" id="forget-pass-link">رمزمو یادم رفته</a>
-    
-                <div class="mt-5 row justify-content-center">
-                  <button
-                    type="submit"
-                    id="login-btn"
-                    class="btn btn-success btn-block rounded-pill w-25"
-                  >
-                  ورود
-                  </button>
-                </div>
-              </form>
+<div class="row m-0 w-100 mb-4">
+  <div
+    class="bg-white shadow mb-4 d-flex justify-content-center align-item-center"
+  >
+    <ul class="nav flex-nowrap">
+      <li class="nav-item">
+        <a
+          class="nav-link h-100 text-center"
+          aria-current="page"
+          href="/account/register"
+          >ثبت نام</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link h-100 text-center active" href="/account/login"
+          >ورود</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col col-sm-7 col-md-4 col-lg-3">
+        <h2 class="text-center text-black-50 mb-5">ورود</h2>
+        <div class="my-3">
+          {% for message in messages %}
+          <div class="alert alert-success" role="alert">{{message}}</div>
+          {% endfor %}
+        </div>
+        <form method="post" class="needs-validation" novalidate>
+          {% csrf_token %}
+          <div class="form-input">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="ایمیل یا شماره تلفن"
+              aria-describedby="basic-addon1"
+              name="logEmail"
+              id="email"
+              required
+            />
+            <i class="bi bi-envelope-fill form-input-icon"></i>
+            <div class="invalid-feedback">
+              این بخش نباید خالی باشد
             </div>
           </div>
+          <div class="form-input">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="رمز ورود"
+              aria-describedby="basic-addon1"
+              name="logPassword"
+              id="password"
+              required  
+            />
+            <i class="bi bi-lock-fill form-input-icon"></i>
+          </div>
+          <a href="http://" id="forget-pass-link">رمزمو یادم رفته</a>
+
+          <div class="mt-5 row justify-content-center">
+            <button
+              id="register-btn"
+              type="submit"
+              class="btn btn-success btn-block rounded-pill w-25"
+            >
+              ورود
+            </button>
+          </div>
+        </form>
+        {% if error %}
+        <div class="my-4">
+          <div class="alert alert-danger" role="alert">{{error}}</div>
+        </div>
+        {% endif %}
+      </div>
     </div>
   </div>
-  {% endblock %}
-  
+</div>
+{% endblock %}

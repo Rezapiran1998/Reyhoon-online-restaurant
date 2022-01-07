@@ -16,6 +16,9 @@ body {
   height: 100%;
   margin: 0;
 }
+a{
+  text-decoration: none!important;
+}
 
 .primary-color {
   background-color: blueviolet !important;
@@ -112,4 +115,10 @@ footer {
 
 .nav-tabs .nav-link {
   border-radius: 0!important;
+}
+
+
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  background-image: none!important;
+  border: 1px solid;
 }
