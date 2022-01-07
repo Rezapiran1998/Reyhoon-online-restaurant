@@ -18,7 +18,7 @@
     <div class="row justify-content-center align-items-center">
       <div class="col col-sm-7 col-md-4 col-lg-3">
         <h2 class="text-center text-black-50 mb-5">ثبت نام</h2>
-        <form method="post">
+        <form method="post" class="needs-validation" novalidate>
           {% csrf_token %} 
           <div class="form-input">
             <input
@@ -27,8 +27,12 @@
               placeholder="نام کاربری"
               aria-describedby="basic-addon1"
               name = "signUsername"
+              required
             />
             <i class="bi bi-person-fill form-input-icon"></i>
+            <div class="invalid-feedback">
+              این بخش نباید خالی باشد
+            </div>
           </div>
           <div class="form-input">
             <input
@@ -37,9 +41,14 @@
               placeholder="ایمیل یا شماره تلفن"
               aria-describedby="basic-addon1"
               name="signEmail"
+              required
             />
             <i class="bi bi-envelope-fill form-input-icon"></i>
+            <div class="invalid-feedback">
+              این بخش نباید خالی باشد
+            </div>
           </div>
+          
           <div class="form-input">
             <input
               type="password"
@@ -47,8 +56,12 @@
               placeholder="رمز ورود"
               aria-describedby="basic-addon1"
               name="signPass1"
+              required
             />
             <i class="bi bi-lock-fill form-input-icon"></i>
+            <div class="invalid-feedback">
+              این بخش نباید خالی باشد
+            </div>
           </div>
           <div class="form-input">
             <input
@@ -57,8 +70,12 @@
               placeholder="رمز ورود"
               aria-describedby="basic-addon1"
               name="signPass2"
+              required
             />
             <i class="bi bi-lock-fill form-input-icon"></i>
+            <div class="invalid-feedback">
+              این بخش نباید خالی باشد
+            </div>
           </div>
           <div class="form-check">
             <input type="checkbox" class="form-check-input" />
