@@ -1,7 +1,6 @@
 {% extends 'base.html' %} {% load static %} {% block head %}
 <link rel="stylesheet" href="{% static 'css/signin.css' %}" />
-{% endblock %} 
-{% block header %}
+{% endblock %} {% block header %}
 
 <nav class="site-nav">
   <div class="container">
@@ -12,7 +11,7 @@
           <i class="bi bi-person-fill"></i>
           لطفی
         </div>
-        <div class="col-4 align-self-center  text-center">
+        <div class="col-4 align-self-center text-center">
           <i class="bi bi-diamond"></i>
         </div>
         <div class="col-4"></div>
@@ -21,100 +20,34 @@
     </div>
   </div>
 </nav>
-{% endblock %}
-{% block content %}
+{% endblock %} {% block content %}
 <div class="row m-0 w-100 mb-4">
-  <ul
-    class="site-tab nav nav-pills mb-3 justify-content-center bg-white shadow align-items-stretch"
-    id="pills-tab"
-    role="tablist"
-  >
-    <li class="nav-item" role="presentation">
-      <button
-        class="nav-link h-100 active"
-        id="pills-home-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#pills-home"
-        type="button"
-        role="tab"
-        aria-controls="pills-home"
-        aria-selected="true"
-      >
-        ورود
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button
-        class="nav-link h-100"
-        id="pills-profile-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#pills-profile"
-        type="button"
-        role="tab"
-        aria-controls="pills-profile"
-        aria-selected="false"
-      >
-        ثبت نام
-      </button>
-    </li>
-  </ul>
-  <div class="tab-content" id="form-sections">
-    <div
-      class="tab-pane fade show active"
-      id="pills-home"
-      role="tabpanel"
-      aria-labelledby="pills-home-tab"
-    >
-      <div class="row justify-content-center align-items-center">
-        <div class="col col-sm-7 col-md-4 col-lg-3">
-          <h2 class="text-center text-black-50 mb-5">ورود</h2>
-          <div class="form-input">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="ایمیل یا شماره تلفن"
-              aria-describedby="basic-addon1"
-            />
-            <i class="bi bi-envelope-fill form-input-icon"></i>
-          </div>
-          <div class="form-input">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="رمز ورود"
-              aria-describedby="basic-addon1"
-            />
-            <i class="bi bi-lock-fill form-input-icon"></i>
-          </div>
+  <div class="bg-white shadow mb-4 d-flex justify-content-center align-item-center ">
+    <ul class="nav flex-nowrap">
+      <li class="nav-item">
+        <a class="nav-link h-100 text-center active" aria-current="page" href="">ثبت نام</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link h-100 text-center" href="/account/login">ورود</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col col-sm-7 col-md-4 col-lg-3">
+        <h2 class="text-center text-black-50 mb-5">ثبت نام</h2>
+        <form method="post">
+          {% csrf_token %} 
+        
 
-          <a href="http://" id="forget-pass-link">رمزمو یادم رفته</a>
-
-          <div class="mt-5 row justify-content-center">
-            <button
-              id="login-btn"
-              class="btn btn-success btn-block rounded-pill w-25"
-            >
-              ورود
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="pills-profile"
-      role="tabpanel"
-      aria-labelledby="pills-profile-tab"
-    >
-      <div class="row justify-content-center align-items-center">
-        <div class="col col-sm-7 col-md-4 col-lg-3">
-          <h2 class="text-center text-black-50 mb-5">ثبت نام</h2>
           <div class="form-input">
             <input
               type="text"
               class="form-control"
               placeholder="نام کاربری"
               aria-describedby="basic-addon1"
+              name = "signUsername"
             />
             <i class="bi bi-person-fill form-input-icon"></i>
           </div>
@@ -124,6 +57,7 @@
               class="form-control"
               placeholder="ایمیل یا شماره تلفن"
               aria-describedby="basic-addon1"
+              name="signEmail"
             />
             <i class="bi bi-envelope-fill form-input-icon"></i>
           </div>
@@ -133,6 +67,7 @@
               class="form-control"
               placeholder="رمز ورود"
               aria-describedby="basic-addon1"
+              name="signPass1"
             />
             <i class="bi bi-lock-fill form-input-icon"></i>
           </div>
@@ -142,12 +77,10 @@
               class="form-control"
               placeholder="رمز ورود"
               aria-describedby="basic-addon1"
+              name="signPass2"
             />
             <i class="bi bi-lock-fill form-input-icon"></i>
           </div>
-
-          <!-- <a href="http://" id="forget-pass-link">رمزمو یادم رفته</a> -->
-
           <div class="form-check">
             <input type="checkbox" class="form-check-input" />
             <label class="form-check-label"
@@ -158,12 +91,13 @@
           <div class="mt-5 row justify-content-center">
             <button
               id="register-btn"
+              type="submit"
               class="btn btn-success btn-block rounded-pill w-50"
             >
               ثبت نام
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
