@@ -10,16 +10,15 @@ def login_view(request):
     if request.method == 'POST':
         email=request.POST['logEmail']
         password=request.POST['logPassword']
-        user = User.objects.get(email=email)
-        print(user)
-        if check_password(password, user.password):
-            if user.is_active:
-                login(request,user)
+        user = User.objects.filter(email=email).first()
+        # print(user)
 
-        if user is not None:
+
+        if user is not None and check_password(password, user.password) and user.is_active:
             auth.login(request, user)
             messages.success(request, 'کابر با موفقیت وارد شد')
-            return redirect('login')
+            return redirect('index')
+
         else:
             return render(request, 'login.html', {'error': 'ایمیل یا پسورد اشتباه است'})
     return render(request, 'login.html',{'success':'کاربر وارد شد'})
