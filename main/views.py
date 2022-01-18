@@ -21,9 +21,6 @@ def restaurant(request):
         resturants = Resturant.objects.all()
 
     resturants = Paginator(resturants, 9)
-
-    # resturants = list(chunks(resturants, 3))
-
     page_number = request.GET.get('page', 1)
     resturants = resturants.get_page(page_number)
 
