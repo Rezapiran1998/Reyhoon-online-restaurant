@@ -9,13 +9,9 @@ window.onscroll = function () {
   }
 
   const stickyElm = document.querySelector('.site-nav');
-  if(pageOffset > 0){
+  if (pageOffset > 0) {
     stickyElm.classList.add('isSticky');
-  }else{
+  } else {
     stickyElm.classList.remove('isSticky');
   }
 };
-
-
-
-

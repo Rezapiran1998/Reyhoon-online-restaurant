@@ -94,31 +94,31 @@ footer {
  }
 
 .yellow{
-    background-color: #e69c3b !important;
-    border-color: #e69c3b !important;
+    background-color: #e69c3b;
+    border-color: #e69c3b ;
 }
 .yellow:hover{
-  background-color: #ffc107 !important;
-  border-color: #ffc107 !important; 
+  background-color: #ffc107;
+  border-color: #ffc107 ; 
 }
 
 .green{
-    background-color: #76a33e !important;
-    border-color: #76a33e !important;
+    background-color: #76a33e;
+    border-color: #76a33e ;
 }
 
 .gray{
-    background-color: #ebebeb !important;
-    border-color: #ebebeb !important;
+    background-color: #ebebeb ;
+    border-color: #ebebeb ;
 }
 
 
 .nav-tabs .nav-link {
-  border-radius: 0!important;
+  border-radius: 0;
 }
 
 
 .form-control.is-invalid, .was-validated .form-control:invalid{
-  background-image: none!important;
+  background-image: none;
   border: 1px solid;
 }
