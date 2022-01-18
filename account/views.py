@@ -23,8 +23,9 @@ def login_view(request):
             return render(request, 'login.html', {'error': 'ایمیل یا پسورد اشتباه است'})
     return render(request, 'login.html',{'success':'کاربر وارد شد'})
 
-def logout(request): 
+def logout_view(request): 
     logout(request)
+    return redirect('login')
     
 def register(request):
     if request.method == 'POST':
