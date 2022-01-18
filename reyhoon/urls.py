@@ -25,3 +25,4 @@ urlpatterns = [
 ]
 
 urlpatterns += static('images', document_root='images')
+urlpatterns += static('videos', document_root='videos')
