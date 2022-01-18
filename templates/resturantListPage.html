@@ -150,18 +150,18 @@
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     {% if resturants.has_previous %}
-        <li class="page-item"><a class="page-link" href="?page={{ resturants.previous_page_number }}">قبلی</a></li>
+        <li class="page-item"><a class="page-link" href="?q={{request.GET.q}}&page={{ resturants.previous_page_number }}">قبلی</a></li>
     {% else %}
         <li class="page-item disabled"><a class="page-link" href="">قبلی</a></li>
     {% endif %}
 
     {% for num in resturants.paginator.page_range %}
         
-        <li class="page-item {% if num == resturants.number %}active{% endif %}"><a class="page-link " href="?page={{num}}">{{num}}</a></li>
+        <li class="page-item {% if num == resturants.number %}active{% endif %}"><a class="page-link " href="?q={{request.GET.q}}&page={{num}}">{{num}}</a></li>
     {% endfor %}
 
     {% if resturants.has_next %}
-        <li class="page-item"><a class="page-link" href="?page={{ resturants.next_page_number }}">بعدی</a></li>
+        <li class="page-item"><a class="page-link" href="?q={{request.GET.q}}&page={{ resturants.next_page_number }}">بعدی</a></li>
     {% else %}
         <li class="page-item disabled"><a class="page-link" href="">بعدی</a></li>
     {% endif %}
