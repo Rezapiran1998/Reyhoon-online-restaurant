@@ -15,7 +15,10 @@ def index(request):
 
 def restaurant(request):
 
-    resturants = Resturant.objects.all()
+    if('q' in request.GET):
+        resturants = Resturant.objects.filter(name__icontains=request.GET['q'])
+    else:
+        resturants = Resturant.objects.all()
 
     resturants = Paginator(resturants, 9)
 
